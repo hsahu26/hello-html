@@ -13,6 +13,7 @@
         function DisplayIP(response) {
             document.getElementById("ipaddress").innerHTML = "Your IP Address is " + response.ip;
         }
+         window.myVar = '{{ env('MY_POD_IP') }}';
     </script>
 </head>
 <body>
